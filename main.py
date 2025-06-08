@@ -58,6 +58,7 @@ def main():
         print(f"Max point count is {max_point_count}")
         point_count = int(input("Enter the point count: "))
         update_input(x_size, y_size, min(point_count, max_point_count), INPUT_FILE)
+        print("New input created")
 
     lines = []
     with open("input.txt", "r") as f:
