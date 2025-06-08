@@ -54,8 +54,10 @@ def main():
     if choice.strip().lower() == "u":
         x_size = int(input("Enter the size of the grid on the X axis: "))
         y_size = int(input("Enter the size of the grid on the Y axis: "))
+        max_point_count = x_size * y_size
+        print(f"Max point count is {max_point_count}")
         point_count = int(input("Enter the point count: "))
-        update_input(x_size, y_size, point_count, INPUT_FILE)
+        update_input(x_size, y_size, min(point_count, max_point_count), INPUT_FILE)
 
     lines = []
     with open("input.txt", "r") as f:
