@@ -1,10 +1,8 @@
 import random
 
 
-def main():
+def generate_input(max_x, max_y):
     points_used = set()
-    max_x = int(input("Enter the max X value: "))
-    max_y = int(input("Enter the max Y value: "))
 
     point_count = int(input("Enter the amount of points: "))
 
@@ -13,9 +11,4 @@ def main():
         y = random.randint(0, max_y)
         points_used.add((x, y))
 
-    for point in points_used:
-        print(f"{point[0]} {point[1]}")
-
-
-if __name__ == "__main__":
-    main()
+    return list(points_used)
