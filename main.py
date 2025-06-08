@@ -52,6 +52,7 @@ def solve(lines):
 def main():
     choice = input("Enter 'u' to update the input file: ")
     if choice.strip().lower() == "u":
+        print("Size should be at least 2 on each axis")
         x_size = int(input("Enter the size of the grid on the X axis: "))
         y_size = int(input("Enter the size of the grid on the Y axis: "))
         max_point_count = x_size * y_size
