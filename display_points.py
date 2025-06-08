@@ -3,7 +3,7 @@ from constants import WINDOW_SIZE, WINDOW_MARGIN
 
 
 def draw_points(grid_size, points, lines):
-    grid_size_x, grid_size_y = grid_size
+    grid_size_x, grid_size_y = grid_size[0] - 1, grid_size[1] - 1
 
     ratio = grid_size_x / grid_size_y
     ratio = max(ratio, grid_size_y / grid_size_x)
