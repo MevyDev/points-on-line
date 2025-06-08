@@ -1,8 +1,6 @@
 from input_gen import generate_input
 from display_points import draw_points
-
-INPUT_FILE = "input.txt"
-WINDOW_SIZE = (600, 600)
+from constants import INPUT_FILE
 
 
 def update_input(x_size, y_size, point_count, input_file):
@@ -76,7 +74,7 @@ def main():
     print(f"targets hit: {best}")
     print(f"target list: {points}")
 
-    draw_points(WINDOW_SIZE, (x_size, y_size), points, lines[1:])
+    draw_points((x_size, y_size), points, lines[1:])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,3 @@
+WINDOW_SIZE = (600, 600)
+WINDOW_MARGIN = 50
+INPUT_FILE = "input.txt"
