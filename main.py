@@ -34,6 +34,7 @@ def main():
                 cur_best = ang
             elif len(mp[ang]) > len(mp[cur_best]):
                 cur_best = ang
+        mp[cur_best].append((x1, y1))
         if best < len(mp[cur_best]):
             best = len(mp[cur_best])
             points = mp[cur_best].copy()
